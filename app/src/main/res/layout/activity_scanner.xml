@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ScannerActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/scanning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:id="@+id/IVcapture"
+        />
+
+    <EditText
+        android:id="@+id/TVresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IVcapture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:background="@android:color/transparent"
+        android:hint="Your Text Will Appear Here"
+        android:textAlignment="center"
+        android:textColor="@color/black_shade_1"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/TVresult"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/IVcapture"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:singleLine="true"-->
+<!--        android:scrollbarAlwaysDrawHorizontalTrack="true"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Your result wil appear here"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/black_shade_1"-->
+<!--         />-->
+
+    <Button
+        android:id="@+id/BtnSnap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVresult"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="Snap"
+        android:textAllCaps="false"
+        android:background="@drawable/button_back"
+        app:backgroundTint="@color/black_shade_1"/>
+
+    <Button
+        android:id="@+id/BtnDetect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnSnap"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="Detect"
+        android:textAllCaps="false"
+        android:background="@drawable/button_back"
+        app:backgroundTint="@color/black_shade_1"/>
+
+
+
+</RelativeLayout>

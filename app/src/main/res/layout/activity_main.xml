@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/scanning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:id="@+id/IVcapture"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/TVwelcome"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IVcapture"
+        android:text="Welcome To Text Detector"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/BtnCapture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVwelcome"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="Capture Image"
+        android:textAllCaps="false"
+        android:background="@drawable/button_back"
+        app:backgroundTint="@color/black_shade_1"/>
+
+
+
+</RelativeLayout>
